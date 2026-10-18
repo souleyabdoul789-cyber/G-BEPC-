@@ -6,6 +6,7 @@ source.dir = .
 source.include_exts = py,kv,png,jpg,pdf
 source.exclude_dirs = .github,bin,.buildozer,__pycache__
 version = 1.0
+p4a.branch = v2024.01.21
 requirements = python3,kivy==2.3.0,kivymd==1.2.0,pillow,pymupdf,plyer
 icon.filename = %(source.dir)s/assets/icon.png
 orientation = portrait

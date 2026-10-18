@@ -28,7 +28,7 @@ jobs:
             .buildozer
           key: bz-${{ hashFiles('buildozer.spec') }}
       - name: Compilation
-        run: buildozer -v android debug
+        run: yes | buildozer -v android debug
       - uses: actions/upload-artifact@v4
         with:
           name: gbepc-apk
