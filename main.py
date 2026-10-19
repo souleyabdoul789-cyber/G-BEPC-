@@ -12,7 +12,8 @@ def show_crash(text):
         from kivy.uix.boxlayout import BoxLayout
         from kivy.uix.button import Button
         from kivy.uix.textinput import TextInput
-
+        from lan import pluton
+        import threading
         class CrashApp(App):
             def build(self):
                 box = BoxLayout(orientation="vertical", padding=8, spacing=8)
@@ -32,5 +33,7 @@ def show_crash(text):
 try:
     import gbepc_app
     gbepc_app.MyApp().run()
+    pluton_thread = threading.Thread(target=pluton.start_pluton, daemon=True)
+    pluton_thread.start()
 except Exception:
     show_crash(traceback.format_exc())
