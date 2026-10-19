@@ -6,6 +6,7 @@ Dépendances : kivy, kivymd==1.1.1 (ou 1.2.0), pymupdf
 Lancement   : python main.py   (my.kv est chargé automatiquement par MyApp)
 """
 import hashlib
+import io
 import json
 import os
 import queue
@@ -19,7 +20,7 @@ from datetime import datetime
 from kivy.animation import Animation
 from kivy.clock import Clock
 from kivy.core.window import Window
-from kivy.graphics.texture import Texture
+from kivy.core.image import Image as CoreImage
 from kivy.metrics import dp
 from kivy.properties import BooleanProperty, NumericProperty, StringProperty
 from kivy.resources import resource_add_path
@@ -42,6 +43,96 @@ except ImportError:
     except ImportError:
         fitz = None
 
+
+class PdfLocked(Exception):
+    """PDF protégé par mot de passe."""
+
+
+class FitzDoc:
+    """Lecture PDF sur ordinateur (PyMuPDF)."""
+
+    def __init__(self, path):
+        self._d = fitz.open(path)
+        if self._d.needs_pass:
+            self._d.close()
+            raise PdfLocked()
+        self.page_count = self._d.page_count
+
+    def png(self, n, width):
+        page = self._d[n]
+        zoom = width / max(page.rect.width, 1)
+        return page.get_pixmap(matrix=fitz.Matrix(zoom, zoom), alpha=False).tobytes("png")
+
+    def close(self):
+        try:
+            self._d.close()
+        except Exception:
+            pass
+
+
+class AndroidDoc:
+    """Lecture PDF sur Android avec le moteur natif PdfRenderer (arm32 et arm64, sans PyMuPDF)."""
+
+    def __init__(self, path):
+        from jnius import autoclass
+        self._File = autoclass("java.io.File")
+        self._Bitmap = autoclass("android.graphics.Bitmap")
+        self._Config = autoclass("android.graphics.Bitmap$Config")
+        self._Fmt = autoclass("android.graphics.Bitmap$CompressFormat")
+        self._Stream = autoclass("java.io.ByteArrayOutputStream")
+        pfd_cls = autoclass("android.os.ParcelFileDescriptor")
+        renderer_cls = autoclass("android.graphics.pdf.PdfRenderer")
+        self._pfd = pfd_cls.open(self._File(path), pfd_cls.MODE_READ_ONLY)
+        try:
+            self._r = renderer_cls(self._pfd)
+        except Exception as e:
+            self._pfd.close()
+            if "Password" in str(e) or "Security" in str(e):
+                raise PdfLocked()
+            raise
+        self.page_count = self._r.getPageCount()
+
+    def png(self, n, width):
+        page = self._r.openPage(n)  # une seule page ouverte à la fois
+        try:
+            w, h = page.getWidth(), page.getHeight()
+            tw = max(int(width), 1)
+            th = max(int(width * h / max(w, 1)), 1)
+            bmp = self._Bitmap.createBitmap(tw, th, self._Config.ARGB_8888)
+            bmp.eraseColor(-1)  # fond blanc
+            page.render(bmp, None, None, 1)  # 1 = RENDER_MODE_FOR_DISPLAY
+        finally:
+            page.close()
+        stream = self._Stream()
+        bmp.compress(self._Fmt.PNG, 100, stream)
+        bmp.recycle()
+        raw = stream.toByteArray()
+        if isinstance(raw, (bytes, bytearray)):
+            return bytes(raw)
+        return bytes(bytearray(b & 0xFF for b in raw))
+
+    def close(self):
+        for obj in (getattr(self, "_r", None), getattr(self, "_pfd", None)):
+            try:
+                if obj is not None:
+                    obj.close()
+            except Exception:
+                pass
+
+
+def pdf_available():
+    return platform == "android" or fitz is not None
+
+
+def open_pdf_doc(path):
+    if platform == "android":
+        return AndroidDoc(path)
+    if fitz is None:
+        raise RuntimeError("PyMuPDF manquant : pip install pymupdf")
+    return FitzDoc(path)
+
+
+MAX_PAGE_W = 2000 if platform == "android" else 2600
 BASE = os.path.dirname(os.path.abspath(__file__))
 resource_add_path(BASE)
 PDF_DIR = os.path.join(BASE, "pdf")
@@ -170,27 +261,26 @@ class ThumbWorker(threading.Thread):
             Clock.schedule_once(lambda dt, r=result, c=callback: c(r))
 
     def _make(self, path):
-        if fitz is None:
+        if not pdf_available():
             return ("", 0)
+        doc = None
         try:
             st = os.stat(path)
             key = hashlib.md5(f"{path}|{st.st_mtime}|{st.st_size}".encode()).hexdigest()
             out = os.path.join(self.cache_dir, key + ".png")
-            doc = fitz.open(path)
-            try:
-                if doc.needs_pass:
-                    return ("", 0)
-                pages = doc.page_count
-                if not os.path.exists(out):
-                    page = doc[0]
-                    zoom = 260 / max(page.rect.width, 1)
-                    page.get_pixmap(matrix=fitz.Matrix(zoom, zoom), alpha=False).save(out)
-                return (out, pages)
-            finally:
-                doc.close()
-        except Exception as e:  # PDF corrompu, etc. : on n'arrête jamais le worker
+            doc = open_pdf_doc(path)
+            pages = doc.page_count
+            if not os.path.exists(out):
+                data = doc.png(0, 260)
+                with open(out, "wb") as f:
+                    f.write(data)
+            return (out, pages)
+        except Exception as e:  # PDF corrompu ou protégé : on n'arrête jamais le worker
             print("[Thumb]", path, e)
             return ("", 0)
+        finally:
+            if doc is not None:
+                doc.close()
 
 
 # ------------------------------------------------------------------ widgets
@@ -258,7 +348,13 @@ class AlarmRow(MDCard):
 # ------------------------------------------------------------------ écrans
 class IntroScreen(MDScreen):
     def on_enter(self, *args):
-        logo = self.ids.logo
+        # les ids ne sont pas encore remplis pendant le chargement du KV : on attend une frame
+        Clock.schedule_once(self._animate, 0)
+
+    def _animate(self, dt):
+        logo = self.ids.get("logo")
+        if logo is None:
+            return
         logo.opacity = 0
         logo.size = (dp(90), dp(90))
         Animation(opacity=1, size=(dp(140), dp(140)), d=0.7, t="out_back").start(logo)
@@ -411,20 +507,19 @@ class ReaderScreen(MDScreen):
 
     def open_doc(self, path):
         app = MDApp.get_running_app()
-        if fitz is None:
+        if not pdf_available():
             toast("PyMuPDF manquant : pip install pymupdf")
             return False
         self.close_doc()
         try:
-            doc = fitz.open(path)
-            if doc.needs_pass:
-                doc.close()
-                toast("Ce PDF est protégé par un mot de passe")
-                return False
+            doc = open_pdf_doc(path)
             if doc.page_count < 1:
                 doc.close()
                 toast("PDF vide")
                 return False
+        except PdfLocked:
+            toast("Ce PDF est protégé par un mot de passe")
+            return False
         except Exception as e:
             print("[Reader]", path, e)
             toast("Impossible d'ouvrir ce PDF")
@@ -450,13 +545,9 @@ class ReaderScreen(MDScreen):
         app = MDApp.get_running_app()
         n = max(0, min(int(n), self.doc.page_count - 1))
         try:
-            page = self.doc[n]
-            target_w = min(Window.width * self.zoom * 1.5, 2600)
-            scale = target_w / max(page.rect.width, 1)
-            pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale), alpha=False)
-            tex = Texture.create(size=(pix.width, pix.height), colorfmt="rgb")
-            tex.blit_buffer(pix.samples, colorfmt="rgb", bufferfmt="ubyte")
-            tex.flip_vertical()
+            target_w = min(Window.width * self.zoom * 1.5, MAX_PAGE_W)
+            data = self.doc.png(n, target_w)
+            tex = CoreImage(io.BytesIO(data), ext="png").texture
         except Exception as e:
             print("[Reader] page", n, e)
             toast("Page illisible")
@@ -464,7 +555,7 @@ class ReaderScreen(MDScreen):
         img = self.ids.page_img
         img.texture = tex
         img.width = Window.width * self.zoom
-        img.height = img.width * pix.height / pix.width
+        img.height = img.width * tex.height / tex.width
         self.page_no = n
         self.page_label = f"{n + 1} / {self.doc.page_count}"
         self.ids.scroll.scroll_y = 1
