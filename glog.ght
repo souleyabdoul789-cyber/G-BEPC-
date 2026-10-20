@@ -1,0 +1,141 @@
+Kivy: v2.3.1
+Logger: Record log in /home/ghost/.kivy/logs/kivy_26-10-20_4.txt
+Kivy: Installed at "/usr/lib/python3/dist-packages/kivy/__init__.py"
+Python: v3.13.7 (main, Mar  3 2026, 12:19:54) [GCC 15.2.0]
+Python: Interpreter at "/usr/bin/python3"
+Logger: Purge log fired. Processing...
+Logger: Purge finished!
+Factory: 195 symbols loaded
+Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+Clipboard: Provider: xclip
+CutBuffer: cut buffer support enabled
+Text: Provider: sdl2(['text_pango'] ignored)
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: Backend used <sdl2>
+GL: OpenGL version <b'4.5 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.25.10.2'>
+GL: OpenGL vendor <b'Mesa'>
+GL: OpenGL renderer <b'llvmpipe (LLVM 20.1.8, 128 bits)'>
+GL: OpenGL parsed version: 4, 5
+GL: Shading version <b'4.50'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/main.py", line 55, in <module>
+stderr:     from lan import pluton
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 11, in <module>
+stderr:     from .webcam import record_webcam
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/webcam.py", line 4, in <module>
+stderr:     from plyer import camera
+stderr: ModuleNotFoundError: No module named 'plyer'
+stderr: 
+stderr: During handling of the above exception, another exception occurred:
+stderr: 
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/main.py", line 70, in <module>
+stderr:     show_crash(traceback.format_exc())
+stderr:     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/main.py", line 46, in show_crash
+stderr:     CrashApp().run()
+stderr:     ~~~~~~~~~~~~~~^^
+stderr:   File "/usr/lib/python3/dist-packages/kivy/app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:     ~~~~~~~~~~~^^
+stderr:   File "/usr/lib/python3/dist-packages/kivy/base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:     ~~~~~~~~~~~~~~~~~~^^
+stderr:   File "/usr/lib/python3/dist-packages/kivy/base.py", line 341, in mainloop
+stderr:     self.window.mainloop()
+stderr:     ~~~~~~~~~~~~~~~~~~~~^^
+stderr:   File "/usr/lib/python3/dist-packages/kivy/core/window/window_sdl2.py", line 574, in mainloop
+stderr:     event = self._win.poll()
+stderr: KeyboardInterrupt
+Kivy: v2.3.1
+Logger: Record log in /home/ghost/.kivy/logs/kivy_26-10-20_13.txt
+Kivy: Installed at "/usr/lib/python3/dist-packages/kivy/__init__.py"
+Python: v3.13.7 (main, Mar  3 2026, 12:19:54) [GCC 15.2.0]
+Python: Interpreter at "/usr/bin/python3"
+Logger: Purge log fired. Processing...
+Logger: Purge finished!
+Factory: 195 symbols loaded
+Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+Clipboard: Provider: xclip
+CutBuffer: cut buffer support enabled
+Text: Provider: sdl2(['text_pango'] ignored)
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: Backend used <sdl2>
+GL: OpenGL version <b'4.5 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.25.10.2'>
+GL: OpenGL vendor <b'Mesa'>
+GL: OpenGL renderer <b'llvmpipe (LLVM 20.1.8, 128 bits)'>
+GL: OpenGL parsed version: 4, 5
+GL: Shading version <b'4.50'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/main.py", line 59, in <module>
+stderr:     from lan import pluton
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 11, in <module>
+stderr:     from .webcam import record_webcam
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/webcam.py", line 4, in <module>
+stderr:     from plyer import camera
+stderr: ModuleNotFoundError: No module named 'plyer'
+stderr: 
+stderr: During handling of the above exception, another exception occurred:
+stderr: 
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/main.py", line 74, in <module>
+stderr:     show_crash(traceback.format_exc())
+stderr:     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/main.py", line 50, in show_crash
+stderr:     CrashApp().run()
+stderr:     ~~~~~~~~~~~~~~^^
+stderr:   File "/usr/lib/python3/dist-packages/kivy/app.py", line 956, in run
+stderr:     runTouchApp()
+stderr:     ~~~~~~~~~~~^^
+stderr:   File "/usr/lib/python3/dist-packages/kivy/base.py", line 574, in runTouchApp
+stderr:     EventLoop.mainloop()
+stderr:     ~~~~~~~~~~~~~~~~~~^^
+stderr:   File "/usr/lib/python3/dist-packages/kivy/base.py", line 341, in mainloop
+stderr:     self.window.mainloop()
+stderr:     ~~~~~~~~~~~~~~~~~~~~^^
+stderr:   File "/usr/lib/python3/dist-packages/kivy/core/window/window_sdl2.py", line 574, in mainloop
+stderr:     event = self._win.poll()
+stderr: KeyboardInterrupt
+Kivy: v2.3.1
+Logger: Record log in /home/ghost/.kivy/logs/kivy_26-10-20_14.txt
+Kivy: Installed at "/usr/lib/python3/dist-packages/kivy/__init__.py"
+Python: v3.13.7 (main, Mar  3 2026, 12:19:54) [GCC 15.2.0]
+Python: Interpreter at "/usr/bin/python3"
+Logger: Purge log fired. Processing...
+Logger: Purge finished!
+Factory: 195 symbols loaded
+Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+Clipboard: Provider: xclip
+CutBuffer: cut buffer support enabled
+Text: Provider: sdl2(['text_pango'] ignored)
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: Backend used <sdl2>
+GL: OpenGL version <b'4.5 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.25.10.2'>
+GL: OpenGL vendor <b'Mesa'>
+GL: OpenGL renderer <b'llvmpipe (LLVM 20.1.8, 128 bits)'>
+GL: OpenGL parsed version: 4, 5
+GL: Shading version <b'4.50'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+GL: NPOT texture support is available
+Base: Start application main loop
+Base: Leaving application in progress...

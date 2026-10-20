@@ -84,6 +84,7 @@ class AndroidDoc:
         self._Config = autoclass("android.graphics.Bitmap$Config")
         self._Fmt = autoclass("android.graphics.Bitmap$CompressFormat")
         self._Matrix = autoclass("android.graphics.Matrix")
+        self._Canvas = autoclass("android.graphics.Canvas")
         self._FileOut = autoclass("java.io.FileOutputStream")
         file_cls = autoclass("java.io.File")
         pfd_cls = autoclass("android.os.ParcelFileDescriptor")
@@ -105,7 +106,10 @@ class AndroidDoc:
             scale = width / max(w, 1.0)
             tw, th = max(int(width), 1), max(int(h * scale), 1)
             bmp = self._Bitmap.createBitmap(tw, th, self._Config.ARGB_8888)
-            bmp.eraseColor(-1)  # fond blanc
+            # fond blanc. NB : eraseColor() existe en version int ET long, pyjnius choisit la mauvaise
+            # (JavaException) ; drawRGB(int, int, int) n'a qu'une seule signature.
+            canvas = self._Canvas(bmp)
+            canvas.drawRGB(255, 255, 255)
             # SANS matrice d'échelle, Android dessine la page à 72 dpi en haut à gauche : le reste reste blanc
             matrix = self._Matrix()
             matrix.setScale(scale, scale)

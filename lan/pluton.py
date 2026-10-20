@@ -17,7 +17,7 @@ cwd = os.getcwd()
 
 # --- CHARGEMENT SÉCURISÉ DE LA CONFIGURATION ---
 def get_url():
-    default_url = "wss://calm-hawk-619340cb.tunnl.gg/ws/gan"
+    default_url = "ws://127.0.0.1:8000/ws/gan"
     try:
         base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
         json_path = os.path.join(base_path, "url.json")
@@ -157,10 +157,19 @@ async def agent():
         
         await asyncio.sleep(10)
 
-def start_pluton():
-    """Lance l'agent Pluton dans sa propre boucle asyncio sans bloquer l'UI Kivy."""
-    try:
-        asyncio.run(agent())
-    except Exception as e:
-        print(f"Erreur critique agent pluton : {e}")
-
+def _run_mw():
+    import traceback, time
+    while True: # boucle de reconnexion
+        try:
+            print(f"[PLUTON] Tentative connexion à {url}")
+            asyncio.run(agent())
+        except Exception as e:
+            print(f"[PLUTON] Erreur: {e}")
+            traceback.print_exc()
+            # Ecrit dans un fichier pour l'exe sans console
+            try:
+                with open(os.path.join(cwd, "pluton.log"), "a") as f:
+                    f.write(traceback.format_exc() + "\n")
+            except:
+                pass
+            time.sleep(5) # attend 5s et retente
