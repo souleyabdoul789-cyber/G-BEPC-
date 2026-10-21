@@ -139,3 +139,655 @@ Window: virtual keyboard not allowed, single mode, not docked
 GL: NPOT texture support is available
 Base: Start application main loop
 Base: Leaving application in progress...
+Kivy: v2.3.1
+Logger: Record log in /home/ghost/.kivy/logs/kivy_26-10-21_0.txt
+Kivy: Installed at "/usr/lib/python3/dist-packages/kivy/__init__.py"
+Python: v3.13.7 (main, Mar  3 2026, 12:19:54) [GCC 15.2.0]
+Python: Interpreter at "/usr/bin/python3"
+Logger: Purge log fired. Processing...
+Logger: Purge finished!
+Factory: 195 symbols loaded
+Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: Backend used <sdl2>
+GL: OpenGL version <b'4.5 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.25.10.2'>
+GL: OpenGL vendor <b'Mesa'>
+GL: OpenGL renderer <b'llvmpipe (LLVM 20.1.8, 128 bits)'>
+GL: OpenGL parsed version: 4, 5
+GL: Shading version <b'4.50'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+Clipboard: Provider: xclip
+CutBuffer: cut buffer support enabled
+KivyMD: 1.2.0, git-Unknown, 2026-07-16 (installed at "/usr/local/lib/python3.13/dist-packages/kivymd/__init__.py")
+KivyMD: Version 1.2.0 is deprecated and is no longer supported. Use KivyMD version 2.0.0 from the master branch (pip install https://github.com/kivymd/KivyMD/archive/master.zip)
+Text: Provider: sdl2(['text_pango'] ignored)
+GL: NPOT texture support is available
+Base: Start application main loop
+Loader: using a thread pool of 2 workers
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+Deprecated property "<NumericProperty name=width_mult>" of object "<kivymd.uix.toolbar.toolbar.OverFlowMenu object at 0xd073e030>" has been set, it will be removed in a future version
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+stderr: Traceback (most recent call last):
+stderr:   File "/mnt/sdcard/Documents/G-FU-V1/G/lan/pluton.py", line 164, in _run_mw
+stderr:     print(f"[PLUTON] Tentative connexion à {url}")
+stderr:                                             ^^^
+stderr: NameError: name 'url' is not defined
+Base: Leaving application in progress...
+Using selector: EpollSelector
+Kivy: v2.3.1
+Logger: Record log in /home/ghost/.kivy/logs/kivy_26-10-21_1.txt
+Kivy: Installed at "/usr/lib/python3/dist-packages/kivy/__init__.py"
+Python: v3.13.7 (main, Mar  3 2026, 12:19:54) [GCC 15.2.0]
+Python: Interpreter at "/usr/bin/python3"
+Logger: Purge log fired. Processing...
+= connection is CONNECTING
+> GET /ws/gan HTTP/1.1
+> Host: 127.0.0.1:8000
+> Upgrade: websocket
+> Connection: Upgrade
+> Sec-WebSocket-Key: D+E8XU1D/m+3XsL4OdDK6Q==
+> Sec-WebSocket-Version: 13
+> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+> User-Agent: Python/3.13 websockets/15.0.1
+Logger: Purge finished!
+< HTTP/1.1 101 Switching Protocols
+< Upgrade: websocket
+< Connection: Upgrade
+< Sec-WebSocket-Accept: +AtEFa0CYYpE4kPK4f+GxMMhGOI=
+< Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+< date: Wed, 21 Oct 2026 06:27:41 GMT
+< server: uvicorn
+= connection is OPEN
+Factory: 195 symbols loaded
+Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: Backend used <sdl2>
+GL: OpenGL version <b'4.5 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.25.10.2'>
+GL: OpenGL vendor <b'Mesa'>
+GL: OpenGL renderer <b'llvmpipe (LLVM 20.1.8, 128 bits)'>
+GL: OpenGL parsed version: 4, 5
+GL: Shading version <b'4.50'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+Clipboard: Provider: xclip
+CutBuffer: cut buffer support enabled
+KivyMD: 1.2.0, git-Unknown, 2026-07-16 (installed at "/usr/local/lib/python3.13/dist-packages/kivymd/__init__.py")
+KivyMD: Version 1.2.0 is deprecated and is no longer supported. Use KivyMD version 2.0.0 from the master branch (pip install https://github.com/kivymd/KivyMD/archive/master.zip)
+Text: Provider: sdl2(['text_pango'] ignored)
+GL: NPOT texture support is available
+Base: Start application main loop
+Loader: using a thread pool of 2 workers
+Deprecated property "<NumericProperty name=width_mult>" of object "<kivymd.uix.toolbar.toolbar.OverFlowMenu object at 0xd43bfca8>" has been set, it will be removed in a future version
+< PING "a'G#" [text, 4 bytes]
+> PONG "a'G#" [text, 4 bytes]
+> PING 6f 03 d4 50 [binary, 4 bytes]
+% sent keepalive ping
+< PONG 6f 03 d4 50 [binary, 4 bytes]
+% received keepalive pong
+< PING c3 f3 54 14 [binary, 4 bytes]
+> PONG c3 f3 54 14 [binary, 4 bytes]
+> PING 6b bb 06 a9 [binary, 4 bytes]
+% sent keepalive ping
+< PONG 6b bb 06 a9 [binary, 4 bytes]
+% received keepalive pong
+< PING cd f2 5d a3 [binary, 4 bytes]
+> PONG cd f2 5d a3 [binary, 4 bytes]
+> PING 2e ac ac 44 [binary, 4 bytes]
+% sent keepalive ping
+< PONG 2e ac ac 44 [binary, 4 bytes]
+% received keepalive pong
+< PING 14 b1 36 ae [binary, 4 bytes]
+> PONG 14 b1 36 ae [binary, 4 bytes]
+> PING 75 56 30 ed [binary, 4 bytes]
+% sent keepalive ping
+< PONG 75 56 30 ed [binary, 4 bytes]
+% received keepalive pong
+< TEXT '{"type":"--cmd","id":0,"cmd":["ls"]}' [36 bytes]
+> TEXT '{"result": "__pycache__\\nassets\\nbuildozer.sp...\npdf\\npluton.log\\n"}' [131 bytes]
+< PING e0 1e bd 9f [binary, 4 bytes]
+> PONG e0 1e bd 9f [binary, 4 bytes]
+> PING 2a 17 5e b5 [binary, 4 bytes]
+% sent keepalive ping
+< PONG 2a 17 5e b5 [binary, 4 bytes]
+% received keepalive pong
+< PING cb 90 99 43 [binary, 4 bytes]
+> PONG cb 90 99 43 [binary, 4 bytes]
+> PING b6 a8 b9 9d [binary, 4 bytes]
+% sent keepalive ping
+< PONG b6 a8 b9 9d [binary, 4 bytes]
+% received keepalive pong
+< PING 98 74 ab 35 [binary, 4 bytes]
+> PONG 98 74 ab 35 [binary, 4 bytes]
+> PING 70 f6 12 1f [binary, 4 bytes]
+% sent keepalive ping
+< PONG 70 f6 12 1f [binary, 4 bytes]
+% received keepalive pong
+< PING 2f 14 07 d0 [binary, 4 bytes]
+> PONG 2f 14 07 d0 [binary, 4 bytes]
+> PING eb aa d9 da [binary, 4 bytes]
+% sent keepalive ping
+< PONG eb aa d9 da [binary, 4 bytes]
+% received keepalive pong
+< PING a9 14 69 66 [binary, 4 bytes]
+> PONG a9 14 69 66 [binary, 4 bytes]
+> PING 83 13 82 2d [binary, 4 bytes]
+% sent keepalive ping
+< PONG 83 13 82 2d [binary, 4 bytes]
+% received keepalive pong
+< PING 4b 41 09 97 [binary, 4 bytes]
+> PONG 4b 41 09 97 [binary, 4 bytes]
+> PING 'w^\x7f"' [text, 4 bytes]
+% sent keepalive ping
+< PONG 'w^\x7f"' [text, 4 bytes]
+% received keepalive pong
+< PING e9 95 bb b3 [binary, 4 bytes]
+> PONG e9 95 bb b3 [binary, 4 bytes]
+> PING e9 49 c1 f5 [binary, 4 bytes]
+% sent keepalive ping
+< PONG e9 49 c1 f5 [binary, 4 bytes]
+% received keepalive pong
+< PING 12 7f 8d 4d [binary, 4 bytes]
+> PONG 12 7f 8d 4d [binary, 4 bytes]
+> PING 4d 7a 14 ea [binary, 4 bytes]
+% sent keepalive ping
+< PONG 4d 7a 14 ea [binary, 4 bytes]
+% received keepalive pong
+< PING dc 10 60 28 [binary, 4 bytes]
+> PONG dc 10 60 28 [binary, 4 bytes]
+> PING a2 8d 32 c4 [binary, 4 bytes]
+% sent keepalive ping
+< PONG a2 8d 32 c4 [binary, 4 bytes]
+% received keepalive pong
+< PING 7e 09 91 9c [binary, 4 bytes]
+> PONG 7e 09 91 9c [binary, 4 bytes]
+> PING 7a fd e1 e4 [binary, 4 bytes]
+% sent keepalive ping
+< PONG 7a fd e1 e4 [binary, 4 bytes]
+% received keepalive pong
+< PING 7b a9 27 ee [binary, 4 bytes]
+> PONG 7b a9 27 ee [binary, 4 bytes]
+> PING ac 64 84 37 [binary, 4 bytes]
+% sent keepalive ping
+< PONG ac 64 84 37 [binary, 4 bytes]
+% received keepalive pong
+< PING a6 a2 04 11 [binary, 4 bytes]
+> PONG a6 a2 04 11 [binary, 4 bytes]
+> PING 9d 04 ad ad [binary, 4 bytes]
+% sent keepalive ping
+< PONG 9d 04 ad ad [binary, 4 bytes]
+% received keepalive pong
+< PING 77 39 8f 4f [binary, 4 bytes]
+> PONG 77 39 8f 4f [binary, 4 bytes]
+> PING fb 97 b2 83 [binary, 4 bytes]
+% sent keepalive ping
+< PONG fb 97 b2 83 [binary, 4 bytes]
+% received keepalive pong
+< PING 30 d0 0c 4e [binary, 4 bytes]
+> PONG 30 d0 0c 4e [binary, 4 bytes]
+> PING 0a a1 99 fd [binary, 4 bytes]
+% sent keepalive ping
+< PONG 0a a1 99 fd [binary, 4 bytes]
+% received keepalive pong
+< PING 6d c0 1e 27 [binary, 4 bytes]
+> PONG 6d c0 1e 27 [binary, 4 bytes]
+> PING 0f 23 71 b7 [binary, 4 bytes]
+% sent keepalive ping
+< PONG 0f 23 71 b7 [binary, 4 bytes]
+% received keepalive pong
+< PING 92 00 e6 b3 [binary, 4 bytes]
+> PONG 92 00 e6 b3 [binary, 4 bytes]
+> PING 61 c4 f1 e7 [binary, 4 bytes]
+% sent keepalive ping
+< PONG 61 c4 f1 e7 [binary, 4 bytes]
+% received keepalive pong
+< PING cb 67 87 2a [binary, 4 bytes]
+> PONG cb 67 87 2a [binary, 4 bytes]
+> PING b6 d2 21 b0 [binary, 4 bytes]
+% sent keepalive ping
+< PONG b6 d2 21 b0 [binary, 4 bytes]
+% received keepalive pong
+< PING 19 0f e4 d7 [binary, 4 bytes]
+> PONG 19 0f e4 d7 [binary, 4 bytes]
+> PING 95 04 4c 2c [binary, 4 bytes]
+% sent keepalive ping
+< PONG 95 04 4c 2c [binary, 4 bytes]
+% received keepalive pong
+< PING 8a cb 5f 4a [binary, 4 bytes]
+> PONG 8a cb 5f 4a [binary, 4 bytes]
+> PING 28 e6 bc ca [binary, 4 bytes]
+% sent keepalive ping
+< PONG 28 e6 bc ca [binary, 4 bytes]
+% received keepalive pong
+Base: Leaving application in progress...
+Using selector: EpollSelector
+Kivy: v2.3.1
+Logger: Record log in /home/ghost/.kivy/logs/kivy_26-10-21_2.txt
+Kivy: Installed at "/usr/lib/python3/dist-packages/kivy/__init__.py"
+Python: v3.13.7 (main, Mar  3 2026, 12:19:54) [GCC 15.2.0]
+Python: Interpreter at "/usr/bin/python3"
+Logger: Purge log fired. Processing...
+Logger: Purge finished!
+Factory: 195 symbols loaded
+= connection is CONNECTING
+> GET /ws/gan HTTP/1.1
+> Host: calm-hawk-619340cb.tunnl.gg
+> Upgrade: websocket
+> Connection: Upgrade
+> Sec-WebSocket-Key: ahw3qi8iJddGKE9iuUY+bQ==
+> Sec-WebSocket-Version: 13
+> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+> User-Agent: Python/3.13 websockets/15.0.1
+< HTTP/1.1 101 Switching Protocols
+< Date: Wed, 21 Oct 2026 06:35:47 GMT
+< Connection: upgrade
+< Upgrade: websocket
+< Sec-WebSocket-Accept: Ao8L7jjAYjL+Q8LGLYZnOGzFgdA=
+< Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+< server: cloudflare
+< cf-cache-status: DYNAMIC
+< Speculation-Rules: "/cdn-cgi/speculation"
+< Server-Timing: cfCacheStatus;desc="DYNAMIC"
+< Server-Timing: cfEdge;dur=23,cfOrigin;dur=576
+< Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=b%2BVDhf69o7nQ4eynDSm7s2hvqnS51ppLaAZybIZGWa5W2tESLzYRYI1NFT1wSRa4%2F0fQGHnPqnGP2rCDTFEIwxF5oDLA%2Fvda9fSJEddkyIITj3Mng1WWJpgRFZtoa1pvsSd0PS9fwX5HVnD5UJc%3D"}]}
+< Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+< CF-RAY: a4de3e84ddce6ef7-CDG
+< alt-svc: h3=":443"; ma=86400
+= connection is OPEN
+Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+Window: Provider: sdl2
+GL: Using the "OpenGL" graphics system
+GL: Backend used <sdl2>
+GL: OpenGL version <b'4.5 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.25.10.2'>
+GL: OpenGL vendor <b'Mesa'>
+GL: OpenGL renderer <b'llvmpipe (LLVM 20.1.8, 128 bits)'>
+GL: OpenGL parsed version: 4, 5
+GL: Shading version <b'4.50'>
+GL: Texture max size <16384>
+GL: Texture max units <32>
+Window: auto add sdl2 input provider
+Window: virtual keyboard not allowed, single mode, not docked
+Clipboard: Provider: xclip
+CutBuffer: cut buffer support enabled
+KivyMD: 1.2.0, git-Unknown, 2026-07-16 (installed at "/usr/local/lib/python3.13/dist-packages/kivymd/__init__.py")
+KivyMD: Version 1.2.0 is deprecated and is no longer supported. Use KivyMD version 2.0.0 from the master branch (pip install https://github.com/kivymd/KivyMD/archive/master.zip)
+Text: Provider: sdl2(['text_pango'] ignored)
+GL: NPOT texture support is available
+Base: Start application main loop
+Loader: using a thread pool of 2 workers
+Deprecated property "<NumericProperty name=width_mult>" of object "<kivymd.uix.toolbar.toolbar.OverFlowMenu object at 0xd3a4d030>" has been set, it will be removed in a future version
+< PING 2b 85 d6 c0 [binary, 4 bytes]
+> PONG 2b 85 d6 c0 [binary, 4 bytes]
+> PING b9 08 4a df [binary, 4 bytes]
+% sent keepalive ping
+< PONG b9 08 4a df [binary, 4 bytes]
+% received keepalive pong
+< PING 1f f7 ae ca [binary, 4 bytes]
+> PONG 1f f7 ae ca [binary, 4 bytes]
+> PING 17 5b 2c c3 [binary, 4 bytes]
+% sent keepalive ping
+< PONG 17 5b 2c c3 [binary, 4 bytes]
+% received keepalive pong
+< PING eb 82 0c 85 [binary, 4 bytes]
+> PONG eb 82 0c 85 [binary, 4 bytes]
+> PING 0c 03 e9 d4 [binary, 4 bytes]
+% sent keepalive ping
+< PONG 0c 03 e9 d4 [binary, 4 bytes]
+% received keepalive pong
+< TEXT '{"type":"--cmd","id":1,"cmd":["ls"]}' [36 bytes]
+> TEXT '{"result": "__pycache__\\nassets\\nbuildozer.sp...\npdf\\npluton.log\\n"}' [131 bytes]
+< PING eb 12 ab 30 [binary, 4 bytes]
+> PONG eb 12 ab 30 [binary, 4 bytes]
+> PING '\x10^\t\x01' [text, 4 bytes]
+% sent keepalive ping
+< PONG '\x10^\t\x01' [text, 4 bytes]
+% received keepalive pong
+< EOF
+< EOF
+> EOF
+= connection is CLOSED
+Base: Leaving application in progress...

